@@ -57,6 +57,7 @@ export default function App() {
         <View style={styles.fixToText}>
           <Button
             title="Left button"
+            color="red"
             onPress={() => Alert.alert('Left button pressed')}
           />
           <Button
