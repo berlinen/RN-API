@@ -14,11 +14,12 @@ import FlatListBasics from './src/views/base/flatList';
 import SectionListBasics from './src/views/base/sectionList';
 import NetWorkingBasics from './src/views/base/networking';
 import TextInputBasics from './src/views/base/textInput';
+import ButtonBasics from './src/views/base/buttonBasics';
 
 const App = () => {
   return (
     <>
-      <TextInputBasics />
+      <ButtonBasics />
     </>
   );
 };
