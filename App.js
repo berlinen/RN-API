@@ -15,11 +15,12 @@ import SectionListBasics from './src/views/base/sectionList';
 import NetWorkingBasics from './src/views/base/networking';
 import TextInputBasics from './src/views/base/textInput';
 import ButtonBasics from './src/views/base/buttonBasics';
+import PickerBasics from './src/views/base/picker';
 
 const App = () => {
   return (
     <>
-      <ButtonBasics />
+      <PickerBasics />
     </>
   );
 };
