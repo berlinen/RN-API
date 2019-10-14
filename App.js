@@ -17,11 +17,12 @@ import TextInputBasics from './src/views/base/textInput';
 import ButtonBasics from './src/views/base/buttonBasics';
 import PickerBasics from './src/views/base/picker';
 import SliderBasics from './src/views/base/sliderBasic';
+import SwitchBasics from './src/views/base/switch';
 
 const App = () => {
   return (
     <>
-      <SliderBasics />
+      <SwitchBasics />
     </>
   );
 };
