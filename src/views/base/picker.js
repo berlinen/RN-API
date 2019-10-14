@@ -11,7 +11,7 @@ export default class PickerBasics extends React.Component {
     return (
       <Picker
         selectedValue={this.state.language}
-        style={{height: 50, width: 100}}
+        style={{height: 60, width: 100}}
         onValueChange={(itemValue, itemIndex) =>
           this.setState(() => ({
             language: itemValue,
