@@ -13,8 +13,7 @@ export default class RNSwitchView extends Component {
     return (
       <Switch
         style={{marginTop: 20}}
-        onTintColor={'#ffaa11'}
-        tintColor={'#aaaa11'}
+        trackColor={'#aaaa11'}
         value={this.state.swicthValue1}
         onValueChange={value => {
           //当开关状态改变了，一定要修改value的值，不然最终无法改变状态
@@ -24,7 +23,7 @@ export default class RNSwitchView extends Component {
           });
         }}
         testID={'one'}
-        thumbTintColor={'#ff1111'}
+        thumbColor={'#ff1111'}
       />
     );
   };
@@ -32,8 +31,7 @@ export default class RNSwitchView extends Component {
     return (
       <Switch
         style={{marginTop: 20}}
-        onTintColor={'#aaaaff'}
-        tintColor={'#ffaa11'}
+        trackColor={'#ffaa11'}
         value={this.state.swicthValue2}
         onValueChange={value => {
           //当开关状态改变了，一定要修改value的值，不然最终无法改变状态
@@ -43,15 +41,14 @@ export default class RNSwitchView extends Component {
           });
         }}
         testID={'two'}
-        thumbTintColor={'#11ff11'}
+        thumbColor={'#11ff11'}
       />
     );
   };
   _switch3 = () => {
     return (
       <Switch
-        onTintColor={'#aafaff'}
-        tintColor={'#1faa11'}
+        trackColor={'#1faa11'}
         value={this.state.swicthValue2}
         onValueChange={value => {
           //当开关状态改变了，一定要修改value的值，不然最终无法改变状态
@@ -61,7 +58,7 @@ export default class RNSwitchView extends Component {
           });
         }}
         testID={'two'}
-        thumbTintColor={'#f1ff11'}
+        thumbColor={'#f1ff11'}
         disabled={true}
       />
     );
