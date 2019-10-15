@@ -22,12 +22,25 @@ import DatePickerBasics from './src/views/base/datePicker';
 import ProgressBasics from './src/views/base/progressBasics';
 import SegmentedControlIOsBasics from './src/views/base/SegmentedControlIOS';
 
-const App = () => {
-  return (
-    <>
-      <ButtonBasics />
-    </>
-  );
-};
+import {createAppContainer} from 'react-navigation';
+import {createStackNavigator} from 'react-navigation-stack';
+import HomeScreen from './src/views/navigation/HomeScreen';
+import ProfileScreen from './src/views/navigation/ProfileScreen';
+
+const MainNavigator = createStackNavigator({
+  Home: {screen: HomeScreen},
+  Profile: {screen: ProfileScreen},
+  DatePicker: {screen: DatePickerBasics},
+});
+
+const App = createAppContainer(MainNavigator);
+
+// const App = () => {
+//   return (
+//     <>
+//       <ButtonBasics />
+//     </>
+//   );
+// };
 
 export default App;
