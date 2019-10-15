@@ -6,6 +6,7 @@ import {
   SafeAreaView,
   Text,
   Alert,
+  Platform,
 } from 'react-native';
 
 function Separator() {
@@ -28,7 +29,7 @@ export default function App() {
               'Keep your app up to date to enjoy the latest features',
               [
                 {
-                  text: 'Cancel',
+                  text: Platform.OS,
                   onPress: () => console.log('Cancel Pressed'),
                   style: 'cancel',
                 },
@@ -107,6 +108,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    ...Platform.select({
+      ios: {
+        backgroundColor: '#fefeFe',
+      },
+      android: {
+        backgroundColor: '#ccc',
+      },
+    }),
     marginHorizontal: 16,
   },
   title: {

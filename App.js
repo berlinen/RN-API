@@ -25,7 +25,7 @@ import SegmentedControlIOsBasics from './src/views/base/SegmentedControlIOS';
 const App = () => {
   return (
     <>
-      <SegmentedControlIOsBasics />
+      <ButtonBasics />
     </>
   );
 };
