@@ -5,7 +5,7 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 export default class App extends Component {
   static navigationOptions = ({navigation}) => {
     return {
-      title: navigation.getParam('name'),
+      title: navigation.getParam('name')
     };
   };
   state = {
@@ -58,6 +58,10 @@ export default class App extends Component {
             onChange={this.setDate}
           />
         )}
+        <Button
+          title="Update the title"
+          onPress={() => this.props.navigation.setParams({name: '更新了标题!'})}
+        />
       </View>
     );
   }
