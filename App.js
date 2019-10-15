@@ -18,11 +18,12 @@ import ButtonBasics from './src/views/base/buttonBasics';
 import PickerBasics from './src/views/base/picker';
 import SliderBasics from './src/views/base/sliderBasic';
 import SwitchBasics from './src/views/base/switch';
+import DatePickerBasics from './src/views/base/datePicker';
 
 const App = () => {
   return (
     <>
-      <ButtonBasics />
+      <DatePickerBasics />
     </>
   );
 };
