@@ -22,7 +22,7 @@ import SwitchBasics from './src/views/base/switch';
 const App = () => {
   return (
     <>
-      <SwitchBasics />
+      <SectionListBasics />
     </>
   );
 };

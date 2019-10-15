@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
-import {SectionList, StyleSheet, Text, View} from 'react-native';
+import {SectionList, StyleSheet, Text, View, Alert} from 'react-native';
 
 export default class SectionListBasics extends Component {
+  alret = () => {
+    Alert.alert('alret');
+  };
   render() {
     return (
       <View stle={styles.container}>
@@ -23,7 +26,9 @@ export default class SectionListBasics extends Component {
           ]}
           renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
           renderSectionHeader={({section}) => (
-            <Text style={styles.sectionHeader}>{section.title}</Text>
+            <Text style={styles.sectionHeader} onPress={this.alret}>
+              {section.title}
+            </Text>
           )}
           keyExtractor={(item, index) => index}
         />
