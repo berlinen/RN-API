@@ -20,11 +20,12 @@ import SliderBasics from './src/views/base/sliderBasic';
 import SwitchBasics from './src/views/base/switch';
 import DatePickerBasics from './src/views/base/datePicker';
 import ProgressBasics from './src/views/base/progressBasics';
+import SegmentedControlIOsBasics from './src/views/base/SegmentedControlIOS';
 
 const App = () => {
   return (
     <>
-      <ProgressBasics />
+      <SegmentedControlIOsBasics />
     </>
   );
 };
