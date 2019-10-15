@@ -22,7 +22,23 @@ export default function App() {
         </Text>
         <Button
           title="Press me"
-          onPress={() => Alert.alert('Simple Button pressed')}
+          onPress={() =>
+            Alert.alert(
+              'Update available',
+              'Keep your app up to date to enjoy the latest features',
+              [
+                {
+                  text: 'Cancel',
+                  onPress: () => console.log('Cancel Pressed'),
+                  style: 'cancel',
+                },
+                {
+                  text: 'Install',
+                  onPress: () => console.log('Install Pressed'),
+                },
+              ],
+            )
+          }
         />
       </View>
       <Separator />
@@ -35,7 +51,25 @@ export default function App() {
         <Button
           title="Press me"
           color="#f194ff"
-          onPress={() => Alert.alert('Button with adjusted color pressed')}
+          onPress={() =>
+            Alert.prompt(
+              'Enter password',
+              'Enter your password to claim your $1.5B in lottery winnings',
+              [
+                {
+                  text: 'Cancel',
+                  onPress: () => console.log('Cancel Pressed'),
+                  style: 'cancel',
+                },
+                {
+                  text: 'OK',
+                  onPress: password =>
+                    console.log('OK Pressed, password: ' + password),
+                },
+              ],
+              'secure-text',
+            )
+          }
         />
       </View>
       <Separator />
