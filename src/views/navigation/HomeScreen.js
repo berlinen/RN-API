@@ -14,7 +14,6 @@ export default class Screen extends React.Component {
           color="#fff"
         />
       ),
-      /* the rest of this config is unchanged */
     };
   };
   render() {
@@ -31,10 +30,11 @@ export default class Screen extends React.Component {
           title="profile 页面"
           onPress={() => navigate('Profile', {names: 'Jane'})}
         />
-        <Button
+        {/* <Button
           title="ios时间日期选择"
           onPress={() => navigate('DatePicker', {name: '📅选择'})}
-        />
+        /> */}
+        <Button title="Details 页面" onPress={() => navigate('Details')} />
       </View>
     );
   }

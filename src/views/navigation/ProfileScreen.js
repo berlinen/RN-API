@@ -1,13 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, Button} from 'react-native';
+import {View, Text, Button, Arert} from 'react-native';
 
 export default class ProfileScreen extends React.Component {
   static navigationOptions = {
     title: 'Profile',
     headerRight: (
       <Button
-        onPress={() => alert('This is a button!')}
+        onPress={() => Arert.alert('This is a button!')}
         title="Info"
         color="#fff"
       />
@@ -15,6 +15,7 @@ export default class ProfileScreen extends React.Component {
   };
   render() {
     const {navigation} = this.props;
+    const {navigate} = this.props.navigation;
     return (
       <View
         style={{
@@ -25,6 +26,7 @@ export default class ProfileScreen extends React.Component {
         }}>
         <Text>profile 页面</Text>
         <Text>{navigation.getParam('names')}</Text>
+        <Button title="Details 页面" onPress={() => navigate('Details')} />
       </View>
     );
   }
