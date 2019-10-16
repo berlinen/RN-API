@@ -23,35 +23,9 @@ import ProgressBasics from './src/views/base/progressBasics';
 import SegmentedControlIOsBasics from './src/views/base/SegmentedControlIOS';
 
 import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
-import HomeScreen from './src/views/navigation/HomeScreen';
-import ProfileScreen from './src/views/navigation/ProfileScreen';
 
-// const MainNavigator = createStackNavigator({
-//   Home: {screen: HomeScreen},
-//   Profile: {screen: ProfileScreen},,
-// });
-
-const MainNavigator = createStackNavigator(
-  {
-    Home: HomeScreen,
-    Profile: ProfileScreen,
-    DatePicker: DatePickerBasics,
-  },
-  {
-    initialRouteName: 'Home',
-    /* The header config from HomeScreen is now here */
-    defaultNavigationOptions: {
-      headerStyle: {
-        backgroundColor: '#f4511e',
-      },
-      headerTintColor: '#fff',
-      headerTitleStyle: {
-        fontWeight: 'bold',
-      },
-    },
-  },
-);
+import RootStack from './src/route/modal';
+import MainNavigator from './src/route/normal';
 
 const App = createAppContainer(MainNavigator);
 

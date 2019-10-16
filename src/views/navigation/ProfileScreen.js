@@ -1,9 +1,16 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, Button} from 'react-native';
 
 export default class ProfileScreen extends React.Component {
   static navigationOptions = {
     title: 'Profile',
+    headerRight: (
+      <Button
+        onPress={() => alert('This is a button!')}
+        title="Info"
+        color="#fff"
+      />
+    ),
   };
   render() {
     const {navigation} = this.props;

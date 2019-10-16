@@ -5,7 +5,7 @@ import DateTimePicker from '@react-native-community/datetimepicker';
 export default class App extends Component {
   static navigationOptions = ({navigation}) => {
     return {
-      title: navigation.getParam('name')
+      title: navigation.getParam('name'),
     };
   };
   state = {

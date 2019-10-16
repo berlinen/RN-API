@@ -2,8 +2,19 @@ import React from 'react';
 import {Button, View} from 'react-native';
 
 export default class Screen extends React.Component {
-  static navigationOptions = {
-    title: 'Welcome',
+  static navigationOptions = ({navigation}) => {
+    const params = navigation.state.params || {};
+
+    return {
+      headerLeft: (
+        <Button
+          onPress={() => navigation.navigate('MyModal')}
+          title="Info"
+          color="#fff"
+        />
+      ),
+      /* the rest of this config is unchanged */
+    };
   };
   render() {
     const {navigate} = this.props.navigation;
