@@ -28,7 +28,7 @@ import RootStack from './src/route/modal';
 import MainNavigator from './src/route/normal';
 import TabNavigator from './src/route/tab';
 
-const App = createAppContainer(RootStack);
+const App = createAppContainer(TabNavigator);
 
 // const App = () => {
 //   return (
