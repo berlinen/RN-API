@@ -3,12 +3,14 @@ import HomeScreen from '../views/navigation/HomeScreen';
 import ProfileScreen from '../views/navigation/ProfileScreen';
 import ModalScreen from '../views/navigation/ModalScreen';
 import DatePickerBasics from '../views/base/datePicker';
+import DetailScreen from '../views/navigation/DetailScreen';
 
 const MainNavigator = createStackNavigator(
   {
     Home: HomeScreen,
     Profile: ProfileScreen,
     DatePicker: DatePickerBasics,
+    Details: DetailScreen,
   },
   {
     defaultNavigationOptions: {

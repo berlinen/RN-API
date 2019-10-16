@@ -1,6 +1,7 @@
 import {createStackNavigator} from 'react-navigation-stack';
 import HomeScreen from '../views/navigation/HomeScreen';
 import ProfileScreen from '../views/navigation/ProfileScreen';
+import DetailScreen from '../views/navigation/DetailScreen';
 import DatePickerBasics from '../views/base/datePicker';
 
 const MainNavigator = createStackNavigator(
@@ -8,6 +9,7 @@ const MainNavigator = createStackNavigator(
     Home: HomeScreen,
     Profile: ProfileScreen,
     DatePicker: DatePickerBasics,
+    Details: DetailScreen,
   },
   {
     defaultNavigationOptions: {

@@ -1,14 +1,14 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, Text, Button, Arert} from 'react-native';
+import {View, Text, Button} from 'react-native';
 
 export default class ProfileScreen extends React.Component {
   static navigationOptions = {
     title: 'Profile',
     headerRight: (
       <Button
-        onPress={() => Arert.alert('This is a button!')}
-        title="Info"
+        onPress={() => alert('This is a button!')}
+        title="右侧按钮"
         color="#fff"
       />
     ),
@@ -26,7 +26,10 @@ export default class ProfileScreen extends React.Component {
         }}>
         <Text>profile 页面</Text>
         <Text>{navigation.getParam('names')}</Text>
-        <Button title="Details 页面" onPress={() => navigate('Details')} />
+        <Button
+          title="Details 页面"
+          onPress={() => navigate('Details', {name: 'Profile-Detail'})}
+        />
       </View>
     );
   }

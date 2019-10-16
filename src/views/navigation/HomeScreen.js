@@ -10,7 +10,7 @@ export default class Screen extends React.Component {
       headerLeft: (
         <Button
           onPress={() => navigation.navigate('MyModal')}
-          title="Info"
+          title="左侧按钮"
           color="#fff"
         />
       ),
@@ -34,7 +34,10 @@ export default class Screen extends React.Component {
           title="ios时间日期选择"
           onPress={() => navigate('DatePicker', {name: '📅选择'})}
         /> */}
-        <Button title="Details 页面" onPress={() => navigate('Details')} />
+        <Button
+          title="Details 页面"
+          onPress={() => navigate('Details', {name: 'Home-Detail'})}
+        />
       </View>
     );
   }
