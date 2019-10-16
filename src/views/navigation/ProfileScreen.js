@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {View, Text, Button} from 'react-native';
 
@@ -15,7 +16,13 @@ export default class ProfileScreen extends React.Component {
   render() {
     const {navigation} = this.props;
     return (
-      <View>
+      <View
+        style={{
+          flex: 1,
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
         <Text>profile 页面</Text>
         <Text>{navigation.getParam('names')}</Text>
       </View>

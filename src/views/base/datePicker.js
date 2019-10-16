@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
 import {View, Button, Platform} from 'react-native';
 import DateTimePicker from '@react-native-community/datetimepicker';
@@ -42,7 +43,13 @@ export default class App extends Component {
     const {show, date, mode} = this.state;
 
     return (
-      <View>
+      <View
+        style={{
+          flex: 1,
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}>
         <View>
           <Button onPress={this.datepicker} title="Show date picker!" />
         </View>

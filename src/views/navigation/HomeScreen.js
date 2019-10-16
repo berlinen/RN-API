@@ -1,9 +1,10 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {Button, View} from 'react-native';
 
 export default class Screen extends React.Component {
   static navigationOptions = ({navigation}) => {
-    const params = navigation.state.params || {};
+    // const params = navigation.state.params || {};
 
     return {
       headerLeft: (
@@ -19,7 +20,13 @@ export default class Screen extends React.Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <View>
+      <View
+        style={{
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+          marginTop: 50,
+        }}>
         <Button
           title="profile 页面"
           onPress={() => navigate('Profile', {names: 'Jane'})}
