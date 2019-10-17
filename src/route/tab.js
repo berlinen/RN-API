@@ -13,13 +13,10 @@ const getTabBarIcon = (navigation, focused, tintColor) => {
   let iconName;
   if (routeName === 'Home') {
     iconName = `ios-information-circle${focused ? '' : '-outline'}`;
-    // We want to add badges to home tab icon
     IconComponent = HomeIconWithBadge;
   } else if (routeName === 'Profile') {
-    iconName = `ios-options${focused ? '' : '-outline'}`;
+    iconName = `ios-add-circle${focused ? '' : '-outline'}`;
   }
-
-  // You can return any component that you like here!
   return <IconComponent name={iconName} size={25} color={tintColor} />;
 };
 
