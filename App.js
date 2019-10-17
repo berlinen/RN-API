@@ -27,8 +27,9 @@ import {createAppContainer} from 'react-navigation';
 import RootStack from './src/route/modal';
 import MainNavigator from './src/route/normal';
 import TabNavigator from './src/route/tab';
+import DrawerNavigator from './src/route/drawer';
 
-const App = createAppContainer(TabNavigator);
+const App = createAppContainer(DrawerNavigator);
 
 // const App = () => {
 //   return (
