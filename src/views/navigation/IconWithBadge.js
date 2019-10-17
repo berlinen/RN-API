@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {memo} from 'react';
 import {View, Text} from 'react-native';
-import {Ionicons} from 'react-native-vector-icons';
+import {Ionicons} from '@expo/vector-icons'; // 6.2.2;
 
 const IconWithBadge = memo(({name, badgeCount, color, size}) => (
   <View style={{width: 24, height: 24, margin: 5}}>

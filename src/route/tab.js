@@ -1,7 +1,7 @@
 import React from 'react';
 import {createStackNavigator} from 'react-navigation-stack';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
-import {Ionicons} from 'react-native-vector-icons';
+import {Ionicons} from '@expo/vector-icons'; // 6.2.2;
 import HomeScreen from '../views/navigation/HomeScreen';
 import ProfileScreen from '../views/navigation/ProfileScreen';
 import DetailsScreen from '../views/navigation/DetailScreen';
