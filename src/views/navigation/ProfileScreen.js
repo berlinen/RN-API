@@ -5,6 +5,7 @@ import {View, Text, Button} from 'react-native';
 export default class ProfileScreen extends React.Component {
   static navigationOptions = {
     title: 'Profile',
+    tabBarLabel: 'Profile!',
     headerRight: (
       <Button
         onPress={() => alert('This is a button!')}

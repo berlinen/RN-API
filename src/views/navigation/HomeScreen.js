@@ -5,8 +5,9 @@ import {Button, View} from 'react-native';
 export default class Screen extends React.Component {
   static navigationOptions = ({navigation}) => {
     // const params = navigation.state.params || {};
-
     return {
+      title: 'Home',
+      tabBarLabel: 'Home!',
       headerLeft: (
         <Button
           onPress={() => navigation.navigate('MyModal')}
