@@ -2,7 +2,7 @@ import {createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import HomeScreen from '../views/navigation/auth/Home';
 import SignInScreen from '../views/navigation/auth/Sign';
-import OtherScreen from '../views/base/datePicker';
+import OtherScreen from '../views/navigation/auth/Other';
 import AuthLoadingScreen from '../views/navigation/auth/AuthLoading';
 
 // Implementation of HomeScreen, OtherScreen, SignInScreen, AuthLoadingScreen
