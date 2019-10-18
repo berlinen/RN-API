@@ -28,8 +28,9 @@ import RootStack from './src/route/modal';
 import MainNavigator from './src/route/normal';
 import TabNavigator from './src/route/tab';
 import DrawerNavigator from './src/route/drawer';
+import AuthNavigator from './src/route/auth';
 
-const App = createAppContainer(DrawerNavigator);
+const App = createAppContainer(AuthNavigator);
 
 // const App = () => {
 //   return (
