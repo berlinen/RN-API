@@ -24,7 +24,6 @@ export default class Screen extends React.Component {
           flex: 1,
           alignItems: 'center',
           justifyContent: 'center',
-          marginTop: 50,
         }}>
         <Button
           title="profile 页面"

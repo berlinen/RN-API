@@ -3,13 +3,13 @@ import {AsyncStorage, View, Button} from 'react-native';
 
 export default class SignScreen extends React.Component {
   static navigationOptions = {
-    title: 'please sign in',
+    title: '登陆',
   };
 
   render() {
     return (
       <View>
-        <Button title="Sign in" onPress={this._signInAsync} />
+        <Button title="登陆" onPress={this._signInAsync} />
       </View>
     );
   }

@@ -1,4 +1,4 @@
-import {createAppContainer, createSwitchNavigator} from 'react-navigation';
+import {createSwitchNavigator} from 'react-navigation';
 import {createStackNavigator} from 'react-navigation-stack';
 import HomeScreen from '../views/navigation/auth/Home';
 import SignInScreen from '../views/navigation/auth/Sign';
@@ -11,15 +11,13 @@ import AuthLoadingScreen from '../views/navigation/auth/AuthLoading';
 const AppStack = createStackNavigator({Home: HomeScreen, Other: OtherScreen});
 const AuthStack = createStackNavigator({SignIn: SignInScreen});
 
-export default createAppContainer(
-  createSwitchNavigator(
-    {
-      AuthLoading: AuthLoadingScreen,
-      App: AppStack,
-      Auth: AuthStack,
-    },
-    {
-      initialRouteName: 'AuthLoading',
-    },
-  ),
+export default createSwitchNavigator(
+  {
+    AuthLoading: AuthLoadingScreen,
+    App: AppStack,
+    Auth: AuthStack,
+  },
+  {
+    initialRouteName: 'AuthLoading',
+  },
 );
