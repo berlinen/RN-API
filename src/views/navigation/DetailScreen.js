@@ -14,7 +14,7 @@ class DetailsScreen extends React.Component {
         <Text>Details!</Text>
         <Image
           source={require('../../assets/images/bg.jpeg')}
-          style={{width: '100%', height: '100%'}}
+          style={{width: 400, height: 400, borderRadius: 200}}
         />
       </View>
     );
