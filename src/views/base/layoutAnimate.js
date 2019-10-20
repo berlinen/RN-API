@@ -20,7 +20,7 @@ export default class App extends React.Component {
   };
 
   _onPress = () => {
-    // Animate the update
+    // Animate the updated
     LayoutAnimation.spring();
     this.setState({w: this.state.w + 15, h: this.state.h + 15});
   };
