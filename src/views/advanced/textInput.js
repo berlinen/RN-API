@@ -21,7 +21,10 @@ export default class App extends Component {
         <View style={styles.header}>
           <Text style={styles.description}>标题</Text>
         </View>
-        <KeyboardAvoidingView behavior="padding" style={styles.form}>
+        <KeyboardAvoidingView
+          behavior="padding"
+          style={styles.form}
+          keyboardVerticalOffset={100}>
           <TextInput
             style={styles.input}
             value={this.state.email}
