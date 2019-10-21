@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React, {Component} from 'react';
 import {Text, StatusBar, TextInput, View, StyleSheet} from 'react-native';
 
@@ -22,14 +23,9 @@ export default class StatusBarBasic extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <StatusBar barStyle="light-content" />
+        <StatusBar barStyle="light-content" backgroundCol="green" />
         <View style={styles.header}>
-          <Text style={styles.description}>
-            This demo shows how using available TextInput customizations can
-            make forms much easier to use. Try completing the form and notice
-            that different fields have specific optimizations and the return key
-            changes from focusing next input to submitting the form.
-          </Text>
+          <Text style={styles.description}>标题</Text>
         </View>
         <TextInput
           style={styles.input}
