@@ -1,6 +1,6 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {Button, View} from 'react-native';
+import {Button, View, TouchableOpacity, Text, Alret} from 'react-native';
 
 export default class Screen extends React.Component {
   static navigationOptions = ({navigation}) => {
@@ -16,6 +16,9 @@ export default class Screen extends React.Component {
         />
       ),
     };
+  };
+  _onPress = () => {
+    alert('You tapped the button!');
   };
   render() {
     const {navigate} = this.props.navigation;
@@ -38,6 +41,14 @@ export default class Screen extends React.Component {
           title="Details 页面"
           onPress={() => navigate('Details', {name: 'Home-Detail'})}
         />
+        <TouchableOpacity
+          accessible={true}
+          accessibilityLabel={'Tap me!'}
+          onPress={this._onPress}>
+          <View>
+            <Text>Press me!</Text>
+          </View>
+        </TouchableOpacity>
       </View>
     );
   }
