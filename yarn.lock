@@ -1254,6 +1254,18 @@
     "@types/istanbul-lib-coverage" "*"
     "@types/istanbul-lib-report" "*"
 
+"@types/jest-diff@*":
+  version "20.0.1"
+  resolved "https://registry.npm.taobao.org/@types/jest-diff/download/@types/jest-diff-20.0.1.tgz#35cc15b9c4f30a18ef21852e255fdb02f6d59b89"
+  integrity sha1-NcwVucTzChjvIYUuJV/bAvbVm4k=
+
+"@types/jest@^24.0.19":
+  version "24.0.19"
+  resolved "https://registry.npm.taobao.org/@types/jest/download/@types/jest-24.0.19.tgz#f7036058d2a5844fe922609187c0ad8be430aff5"
+  integrity sha1-9wNgWNKlhE/pImCRh8Cti+Qwr/U=
+  dependencies:
+    "@types/jest-diff" "*"
+
 "@types/json-schema@^7.0.3":
   version "7.0.3"
   resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.3.tgz#bdfd69d61e464dcc81b25159c270d75a73c1a636"
@@ -1271,10 +1283,38 @@
   resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.144.tgz#12e57fc99064bce45e5ab3c8bc4783feb75eab8e"
   integrity sha512-ogI4g9W5qIQQUhXAclq6zhqgqNUr7UlFaqDHbch7WLSLeeM/7d3CRaw7GLajxvyFvhJqw4Rpcz5bhoaYtIx6Tg==
 
+"@types/prop-types@*":
+  version "15.7.3"
+  resolved "https://registry.npm.taobao.org/@types/prop-types/download/@types/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
+  integrity sha1-KrDV2i5YFflLC51LldHl8kOrLKc=
+
 "@types/qs@^6.5.1":
   version "6.5.3"
   resolved "https://registry.npmjs.org/@types/qs/-/qs-6.5.3.tgz#1c3b71b091eaeaf5924538006b7f70603ce63d38"
   integrity sha512-Jugo5V/1bS0fRhy2z8+cUAHEyWOATaz4rbyLVvcFs7+dXp5HfwpEwzF1Q11bB10ApUqHf+yTauxI0UXQDwGrbA==
+
+"@types/react-native@^0.60.21":
+  version "0.60.21"
+  resolved "https://registry.npm.taobao.org/@types/react-native/download/@types/react-native-0.60.21.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact-native%2Fdownload%2F%40types%2Freact-native-0.60.21.tgz#81a41cae7b232f52ab3983d854f4a0b0df79531e"
+  integrity sha1-gaQcrnsjL1KrOYPYVPSgsN95Ux4=
+  dependencies:
+    "@types/prop-types" "*"
+    "@types/react" "*"
+
+"@types/react-test-renderer@^16.9.1":
+  version "16.9.1"
+  resolved "https://registry.npm.taobao.org/@types/react-test-renderer/download/@types/react-test-renderer-16.9.1.tgz#9d432c46c515ebe50c45fa92c6fb5acdc22e39c4"
+  integrity sha1-nUMsRsUV6+UMRfqSxvtazcIuOcQ=
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.9.9":
+  version "16.9.9"
+  resolved "https://registry.npm.taobao.org/@types/react/download/@types/react-16.9.9.tgz#a62c6f40f04bc7681be5e20975503a64fe783c3a"
+  integrity sha1-pixvQPBLx2gb5eIJdVA6ZP54PDo=
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -2293,6 +2333,11 @@ cssstyle@^1.0.0:
   integrity sha512-GBrLZYZ4X4x6/QEoBnIrqb8B/f5l4+8me2dkom/j1Gtbxy0kBv6OGzKuAsGM75bkGwGAFkt56Iwg28S3XTZgSA==
   dependencies:
     cssom "0.3.x"
+
+csstype@^2.2.0:
+  version "2.6.7"
+  resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.7.tgz?cache=0&sync_timestamp=1570215695802&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-2.6.7.tgz#20b0024c20b6718f4eda3853a1f5a1cce7f5e4a5"
+  integrity sha1-ILACTCC2cY9O2jhTofWhzOf15KU=
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -6967,6 +7012,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^3.6.4:
+  version "3.6.4"
+  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.6.4.tgz?cache=0&sync_timestamp=1571685160628&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftypescript%2Fdownload%2Ftypescript-3.6.4.tgz#b18752bb3792bc1a0281335f7f6ebf1bbfc5b91d"
+  integrity sha1-sYdSuzeSvBoCgTNff26/G7/FuR0=
 
 ua-parser-js@^0.7.18, ua-parser-js@^0.7.19:
   version "0.7.20"
