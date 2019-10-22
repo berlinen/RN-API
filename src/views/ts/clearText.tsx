@@ -5,11 +5,11 @@ const ClearText: React.SFC = () => {
   let _textInput: any
 
   let claerText = () => {
-    _textInput.setNatibeProps({text: ''})
+    _textInput.setNativeProps({text: ''})
   }
 
   return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+    <View>
         <TextInput
           ref={component => _textInput = component}
           style={{height: 50, width: 200, marginHorizontal: 20, borderWidth: 1, borderColor: '#ccc'}}

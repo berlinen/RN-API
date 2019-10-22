@@ -7,7 +7,7 @@ import ClearText from './clearText'
 
 const Index: React.FC = () => {
   return (
-    <View style={{marginTop:100}}>
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Hello  name="berlin" enthusiasmLevel={2} />
      <TouchableOpacity>
         <MyButton  label="按钮" />
