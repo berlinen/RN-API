@@ -20,6 +20,7 @@
 		6C10DFB3C5B20B037CB0870A /* libPods-Myapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98A6E031A549B90AF5A9D086 /* libPods-Myapp.a */; };
 		77DAF189095740C8DDB27C40 /* libPods-MyappTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3A6698F772EF0FAE90A265 /* libPods-MyappTests.a */; };
 		D5F10002218084DD098DC201 /* libPods-Myapp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E313CA02BAD04E1F201926B /* libPods-Myapp-tvOS.a */; };
+		DA6182EF23604040000A1662 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -365,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6182EF23604040000A1662 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

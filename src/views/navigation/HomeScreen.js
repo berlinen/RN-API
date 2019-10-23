@@ -1,8 +1,16 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
+import SplashScreen from 'react-native-splash-screen';
 import {Button, View, TouchableOpacity, Text, Alret} from 'react-native';
 
 export default class Screen extends React.Component {
+  componentDidMount() {
+    // 隐藏启动页，如果不设置消失时间，在组件加载完启动页自动隐藏
+    setTimeout(() => {
+      SplashScreen.hide();
+    }, 5000);
+  }
+
   static navigationOptions = ({navigation}) => {
     // const params = navigation.state.params || {};
     return {
