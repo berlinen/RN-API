@@ -30,7 +30,7 @@ import TabNavigator from './src/route/tab';
 import DrawerNavigator from './src/route/drawer';
 import AuthNavigator from './src/route/auth';
 
-const App = createAppContainer(MainNavigator);
+const App = createAppContainer(RootStack);
 
 // const App = () => {
 //   return (
