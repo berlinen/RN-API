@@ -27,10 +27,10 @@ const DATA = [
   },
 ];
 
-function Item({ title }) {
+function Item(props: any) {
   return (
     <View style={styles.item}>
-      <Text style={styles.title}>{title}</Text>
+      <Text style={styles.title}>{props.title}</Text>
     </View>
   );
 }
