@@ -4,6 +4,7 @@ import {
   StyleSheet,
   Text,
   View,
+  ImageBackground
 } from 'react-native'
 
 export default class App extends Component {
@@ -15,10 +16,15 @@ export default class App extends Component {
   render() {
     return (
       <View style={[styles.container, styles.horizontal]}>
-        <ActivityIndicator size="large" color="#0000ff" />
-        <ActivityIndicator size="small" color="#00ff00" />
-        <ActivityIndicator size="large" color="#0000ff" />
-        <ActivityIndicator size="small" color="#00ff00" />
+
+        <Text>背景</Text>
+        <ImageBackground source={require('../../assets/images/bg.jpeg')} style={{width: '40%', height: '40%'}}>
+          <Text>Inside</Text>
+          <ActivityIndicator size="large" color="#0000ff" />
+          <ActivityIndicator size="small" color="#00ff00" />
+          <ActivityIndicator size="large" color="#0000ff" />
+          <ActivityIndicator size="small" color="#00ff00" />
+        </ImageBackground>
       </View>
     )
   }
