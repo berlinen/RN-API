@@ -4,7 +4,7 @@ import ProfileScreen from '../views/navigation/ProfileScreen';
 import ModalScreen from '../views/navigation/ModalScreen';
 import DatePickerBasics from '../views/base/datePicker';
 import DetailScreen from '../views/navigation/DetailScreen';
-import ApiScreen from '../views/api/accessibilityInfo';
+import ApiScreen from '../views/api/keyBoard';
 
 const MainNavigator = createStackNavigator(
   {
