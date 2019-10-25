@@ -1,12 +1,15 @@
 import React from 'react'
-import {AccessibilityInfo, View, Text, AppState} from 'react-native'
+import {AccessibilityInfo, View, Text, AppState, BackHandler} from 'react-native'
 
 export default class AccessibilityStatusExample extends React.Component {
+  [x: string]: any;
   state = {
     reduceMotionEnabled: false,
     screenReaderEnabled: false,
     appState: AppState.currentState,
   };
+
+  public backHandler: any
 
   componentDidMount() {
     AccessibilityInfo.addEventListener(
@@ -24,6 +27,11 @@ export default class AccessibilityStatusExample extends React.Component {
     AccessibilityInfo.isScreenReaderEnabled().then((screenReaderEnabled) => {
       this.setState({screenReaderEnabled});
     });
+
+    this.backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
+      this.goBack(); // works best when the goBack is async
+      return true;
+    });
   }
 
   componentWillUnmount() {
@@ -36,6 +44,8 @@ export default class AccessibilityStatusExample extends React.Component {
       'screenReaderChanged',
       this._handleScreenReaderToggled,
     );
+
+    this.backHandler.remove();
   }
 
   _handleReduceMotionToggled = (reduceMotionEnabled: any) => {
