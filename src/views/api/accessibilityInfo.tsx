@@ -1,10 +1,11 @@
 import React from 'react'
-import {AccessibilityInfo, View, Text} from 'react-native'
+import {AccessibilityInfo, View, Text, AppState} from 'react-native'
 
 export default class AccessibilityStatusExample extends React.Component {
   state = {
     reduceMotionEnabled: false,
     screenReaderEnabled: false,
+    appState: AppState.currentState,
   };
 
   componentDidMount() {
@@ -56,6 +57,7 @@ export default class AccessibilityStatusExample extends React.Component {
           The screen reader is{' '}
           {this.state.screenReaderEnabled ? 'enabled' : 'disabled'}.
         </Text>
+        <Text>Current state is: {this.state.appState}</Text>
       </View>
     );
   }
