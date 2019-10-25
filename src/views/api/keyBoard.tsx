@@ -22,11 +22,11 @@ export default class Example extends Component {
   }
 
   _keyboardDidShow() {
-    alert('Keyboard Shown');
+    alert('Keyboard 显示');
   }
 
   _keyboardDidHide() {
-    alert('Keyboard Hidden');
+    alert('Keyboard 隐藏');
   }
 
   render() {
