@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Keyboard, TextInput} from 'react-native';
+import {Keyboard, TextInput, Alert} from 'react-native';
 
 export default class Example extends Component {
   keyboardDidShowListener: any
@@ -22,14 +22,14 @@ export default class Example extends Component {
   }
 
   _keyboardDidShow() {
-    alert('Keyboard 显示');
+    Alert.alert('Keyboard 显示');
   }
 
   _keyboardDidHide() {
-    alert('Keyboard 隐藏');
+    Alert.alert('Keyboard 隐藏');
   }
 
   render() {
-    return <TextInput onSubmitEditing={Keyboard.dismiss} style={{marginTop: 100}} placeholder="q=请输入xxx" />;
+    return <TextInput onSubmitEditing={Keyboard.dismiss} style={{marginTop: 100}} placeholder="请输入内容" />;
   }
 }
