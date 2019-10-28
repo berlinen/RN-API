@@ -1,5 +1,5 @@
 import React from 'react'
-import {AccessibilityInfo, View, Text, AppState, BackHandler} from 'react-native'
+import {AccessibilityInfo, View, Text, AppState, BackHandler, ViewPagerAndroid} from 'react-native'
 
 export default class AccessibilityStatusExample extends React.Component {
   [x: string]: any;
@@ -68,6 +68,14 @@ export default class AccessibilityStatusExample extends React.Component {
           {this.state.screenReaderEnabled ? 'enabled' : 'disabled'}.
         </Text>
         <Text>Current state is: {this.state.appState}</Text>
+        <ViewPagerAndroid initialPage={0}>
+          <View  key="1">
+            <Text>First page</Text>
+          </View>
+          <View  key="2">
+            <Text>Second page</Text>
+          </View>
+        </ViewPagerAndroid>
       </View>
     );
   }
